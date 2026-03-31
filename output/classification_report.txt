@@ -1,0 +1,12 @@
+Test Accuracy: 0.9144
+
+              precision    recall  f1-score   support
+
+    COVID-19       0.99      1.00      1.00       106
+     Healthy       0.97      0.74      0.84       234
+   Pneumonia       0.89      0.99      0.94       390
+Tuberculosis       0.76      1.00      0.86        41
+
+    accuracy                           0.91       771
+   macro avg       0.90      0.93      0.91       771
+weighted avg       0.92      0.91      0.91       771
