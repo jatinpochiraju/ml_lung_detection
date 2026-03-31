@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  medscan-ai:
+    build: .
+    container_name: medscan-ai
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./output:/app/output          # Persist model & outputs
+      - ./data:/app/data              # Training data (optional)
+    environment:
+      - FLASK_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/api/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
