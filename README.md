@@ -46,7 +46,7 @@ It includes scripts for data download, model training, and a Flask-based web das
 ├── requirements.txt        # Python dependencies
 ├── Dockerfile              # Docker container setup
 ├── docker-compose.yml      # Docker Compose setup
-├── static/                 # Static files (CSS, JS)
+├── static/                 # Static files (CSS,JS)
 ├── templates/              # HTML templates
 ├── data/                   # Data (excluded from repo)
 ├── output/                 # Model outputs (excluded from repo)
